@@ -23,6 +23,7 @@ BuildRequires:	cmake
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt5Network)
 BuildRequires:	cmake(Qt5Widgets)
+BuildRequires:	cmake(Qt5Test)
 BuildRequires:	cmake(KF5Config)
 BuildRequires:	cmake(KF5DocTools)
 BuildRequires:	cmake(KF5Codecs)
