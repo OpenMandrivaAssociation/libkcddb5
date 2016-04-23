@@ -1,6 +1,6 @@
 %define major 5
 %define libname %mklibname kcddb %{major}
-%define devname %mklibname kcddb -d
+%define devname %mklibname kcddb5 -d
 %define wlibname %mklibname kcddbwidgets %{major}
 %define debug_package %{nil}
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
@@ -8,7 +8,7 @@
 
 Name:		libkcddb5
 Version:	5.21.0
-Release:	1
+Release:	2
 %if 0%git
 # Taken from kf5 branch of git://anongit.kde.org/libkcddb.git
 Source0:	%{name}-%{git}.tar.xz
@@ -59,6 +59,7 @@ Summary: Development files for %{name}
 Group: Development/C
 Requires: %{libname} = %{EVRD}
 Requires: %{wlibname} = %{EVRD}
+Provides: kcddb5-devel = %{EVRD}
 
 %description -n %{devname}
 Development files (Headers etc.) for %{name}.
